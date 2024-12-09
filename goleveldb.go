@@ -24,6 +24,7 @@ type GoLevelDB struct {
 var _ DB = (*GoLevelDB)(nil)
 
 func NewGoLevelDB(name string, dir string) (*GoLevelDB, error) {
+	panic("Stack trace")
 	return NewGoLevelDBWithOpts(name, dir, &opt.Options{Compression: opt.NoCompression})
 }
 
